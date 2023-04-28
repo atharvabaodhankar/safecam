@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SafeCam</title>
+    <script src="https://kit.fontawesome.com/79f75f2740.js" crossorigin="anonymous"></script>
+    <!-- https://www.free-css.com/assets/files/free-css-templates/preview/page286/safecam/ -->
+
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+         <a href="#">   <h1>Safe<span>Cam</span></h1></a>
+        </div>
+
+
+        <div class="nav-main">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <a href="#" class="nav-phone">
+                <i class="fa-solid fa-phone"></i>
+               <span> +123 456 789</span>
+            </a>
+        </div>
+
+        <div class="hamburger">
+            <div class="hambar"></div>
+            <div class="hambar"></div>
+            <div class="hambar"></div>
+        </div>
+       
+    </nav>
+    <section id="hero">
+        <div class="hero">
+            <h2>BEST SECURITY SERVICES</h2>
+            <h1>Safe & Secure Home For Your Family</h1>
+            <div class="btn-hero">
+                <a href="#" class="btn-blue">Get Quote</a>
+                <a href="#" class="btn-red">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://kit.fontawesome.com/79f75f2740.js" crossorigin="anonymous"></script>
+    <script>
+
+        let navbar = document.querySelector("nav");
+        let hamburger = document.querySelector(".hamburger");
+
+
+        hamburger.addEventListener("click" ,  ()=>{
+            navbar.classList.toggle("active");
+            hamburger.classList.toggle("active");
+        })
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Courgette&family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Kumbh+Sans:wght@100;300;400;500;600;700;800;900&family=Lato:wght@100;300;400;700;900&family=Macondo+Swash+Caps&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Righteous&family=Roboto:wght@100;300;400;500;700;900&family=Satisfy&family=Ubuntu:wght@300;400;500;700&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Jost', sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+:root {
+    --blue: #2878EB;
+    --red: #F14D5D;
+    --light: #ECF4FF;
+    --dark: #120F2D;
+}
+html{
+    font-size: 62.5%;
+}
+h1{
+    font-size: 5rem;
+}
+p{
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    margin: 2rem 0;
+}
+.logo h1{
+    font-size: 5rem;
+    color:var(--blue) ;
+}
+.logo h1 span{
+    color: var(--red);
+}
+.logo{
+    margin-left: 2rem;
+}
+.btn-blue{
+    color: #fff;
+    font-size: 1.6rem;
+    transition: all .3s ease;
+    font-weight: 600;
+    padding: 1.7rem 3rem;
+    background-color: var(--blue);
+}
+.btn-blue:hover{
+    background-color: var(--red);
+}
+.btn-red{
+    color: #fff;
+    font-size: 1.6rem;
+    transition: all .3s ease;
+    font-weight: 600;
+    padding: 1.7rem 3rem;
+    background-color: var(--red);
+}
+.btn-red:hover{
+    background-color: var(--blue);
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* position: fixed; */
+    width: 100%;
+    top: 0;
+    height: 8rem;
+    border-bottom: 1px solid #2879eb16;
+    background-color: #fff;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2rem;
+}
+nav ul li {
+    margin: 0 2rem;
+}
+nav ul li a{
+    font-size: 2rem;
+    color: var(--dark);
+    font-weight: 600;
+    transition: all .3s ease;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 8rem;
+}
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    position: absolute;
+    height: .6rem;
+    left: 50%;
+    bottom: 0;
+    background-color: var(--blue);
+    transition: all .3s ease;
+}
+nav ul li a:hover::after{
+    left: 0%;
+    width: 100%;
+}
+
+nav ul li a:hover{
+    color: var(--blue);
+}
+.nav-main{
+    display: flex;
+    height: 100%;
+}
+.nav-phone{
+    background-color: var(--red);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5rem;
+}
+.nav-phone span{
+    font-size: 2rem;
+    color: #fff;
+}
+.nav-phone i{
+    font-size: 2rem;
+    color: #fff;
+    margin-right: 1rem;
+}
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 8rem);
+    background-image: url(carousel-1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+#hero::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #0000005a;
+    z-index: 1;
+}
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 2;
+    padding: 0 5rem;
+    text-align: center;
+}
+.hero h1 {
+    margin: 2rem 0;
+    color: #fff;
+}
+.hero h2{
+    color: #fff;
+}
+.btn-hero{
+    margin-top: 3rem;
+}
+.btn-hero .btn-blue{
+    margin: 0 1rem;
+}
+.hamburger{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+    position: relative;
+    margin-right: 2rem;
+    display: none;
+}
+.hambar{
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: #120F2D;
+    transition: all .3s ease;
+}
+.hambar:nth-child(1){
+    top: 18px;
+}
+.hambar:nth-child(3){
+    bottom: 18px;
+}
+.hamburger.active .hambar:nth-child(1){
+    top: initial;
+    transform: rotate(45deg);
+}
+.hamburger.active .hambar:nth-child(2){
+    opacity: 0;
+}
+.hamburger.active .hambar:nth-child(3){
+    bottom: initial;
+    transform: rotate(-45deg);
+}
+@media screen and (max-width:1200px) {
+
+}
+@media screen and (max-width:1000px) {
+    .logo h1 {
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width:900px) {
+    .hamburger{
+        display: inherit;
+    }
+    .nav-main{
+        position: fixed;
+        top: 8rem;
+        width: 100%;
+        background-color: #fff;
+        flex-direction: column;
+        height: fit-content;
+        z-index: 100;
+        display: none;
+        transition: all .5s ease;
+    }
+    nav.active .nav-main{
+        display: flex;
+    }
+    .nav-phone{
+        padding: 2rem 2rem;
+    }
+}
+@media screen and (max-width:800px) {
+
+}
+@media screen and (max-width:700px) {
+    h1 {
+        font-size: 4rem;
+    }
+}
+@media screen and (max-width:600px) {
+    .hero {
+        padding: 0 2rem;
+    }
+    .btn-hero{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .btn-hero .btn-blue{
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+}
+@media screen and (max-width:500px) {
+    h1 {
+        font-size: 3rem;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+}
