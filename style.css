@@ -24,6 +24,13 @@ p{
     line-height: 2.5rem;
     margin: 2rem 0;
 }
+.h-blue{
+    font-size: 2rem;
+    letter-spacing: 4px;
+    color: var(--blue);
+    text-transform: uppercase;
+    font-weight: 500;
+}
 .logo h1{
     font-size: 5rem;
     color:var(--blue) ;
@@ -201,12 +208,123 @@ nav ul li a:hover{
     bottom: initial;
     transform: rotate(-45deg);
 }
+/* About Us */
+#aboutus{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 6rem 0;
+}
+.aboutus-img{
+    width: 450px;
+    height: 600px;
+}
+.aboutus-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.aboutus{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-left: 3rem;
+    width: 700px;
+}
+.aboutus h1{
+    font-size: 5rem;
+    margin: 2rem 0;
+}
+.aboutus h4{
+    font-style: italic;
+    font-size: 2rem;
+    color: #767676;
+}
+.aboutus p{
+    font-size: 1.8rem;
+    color: #767676;
+}
+.aboutus-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.aboutus-box{
+    width: 49%;
+    height: 200px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+.aboutus-box span{
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    bottom: 0;
+    left: 0;
+}
+.aboutus-blue span{
+    background-color: var(--red);
+}
+.aboutus-red span{
+    background-color: var(--blue);
+}
+.aboutus-box i{
+    font-size: 6rem;
+}
+.aboutus-box h2{
+    font-size: 2.5rem;
+    margin-top: 2rem;
+}
+.aboutus-blue{
+    background-color: var(--blue);
+}
+.aboutus-red{
+    background-color: var(--red);
+}
+@media screen and (max-width:1350px) {
+    .aboutus {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin-left: 3rem;
+        width: 551px;
+    }
+}
 @media screen and (max-width:1200px) {
-
+    .aboutus h1 {
+        font-size: 4rem;
+    }
+    .aboutus-img {
+        width: 360px;
+        height: 590px;
+    }
 }
 @media screen and (max-width:1000px) {
     .logo h1 {
         font-size: 3rem;
+    }
+    #aboutus{
+        flex-direction: column;
+        align-items: center;
+    }
+    .aboutus{
+        margin-top: 5rem ;
+    }
+    .aboutus-img {
+        width: 550px;
+        height: 590px;
+    }
+    .aboutus {
+        margin-left: 0;
+        width: 90%;
     }
 }
 @media screen and (max-width:900px) {
@@ -238,6 +356,10 @@ nav ul li a:hover{
     h1 {
         font-size: 4rem;
     }
+    .aboutus-img {
+        width: 90%;
+        height: auto;
+    }
 }
 @media screen and (max-width:600px) {
     .hero {
@@ -252,6 +374,15 @@ nav ul li a:hover{
     .btn-hero .btn-blue{
         margin: 0;
         margin-bottom: 2rem;
+    }
+    .aboutus h1 {
+        font-size: 3rem;
+    }
+    .aboutus-flex {
+       flex-direction: column;
+    }
+    .aboutus-box{
+        width: 100%;
     }
 }
 @media screen and (max-width:500px) {
