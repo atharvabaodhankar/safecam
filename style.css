@@ -288,6 +288,107 @@ nav ul li a:hover{
 .aboutus-red{
     background-color: var(--red);
 }
+/* Services */
+#services{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 7rem 0;
+}
+.services-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding:  0 3rem;
+    width: 600px;
+}
+.services-header h1{
+    margin: 2rem 0;
+    margin-bottom: 4rem;
+}
+.services{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.services-box{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 3rem;
+    background-color:#ECF4FF ;
+    cursor: pointer;
+    width: 400px;
+    position: relative;
+    z-index: 3;
+    margin: 2rem 1.5rem;
+}
+.services-box span{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 5px;
+    background-color: var(--blue);
+}
+.services-box::after{
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 100%;
+    content: '';
+    position: absolute;
+    background-color: var(--blue);
+    opacity: 0;
+    transition: all .6s ease;
+    z-index: -1;
+}
+.services-box:hover::after{
+    width: 100%;
+    opacity: 1;
+}
+.services-box i{
+    font-size: 5rem;
+    transition: all .3s ease-in-out;
+    color: var(--red);
+}
+.services-box h3{
+    margin-top: 3rem;
+    font-size: 2rem;
+    transition: all .3s ease-in-out;
+    color: var(--blue);
+}
+.services-box:hover h3 , .services-box:hover h2 , .services-box:hover i ,.services-box:hover .services-btn , .services-box:hover p {
+   color: #fff;
+}
+.services-box p{
+    transition: all .3s ease-in-out;
+}
+.services-box h2{
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    transition: all .3s ease-in-out;
+    margin-bottom: 1.5rem;
+}
+.services-btn{
+    color: var(--blue);
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    transition: all .3s ease-in-out;
+    font-size: 1.7rem;
+}
+.services-btn i{
+    transition: all .3s ease-in-out;
+    font-size: 1.7rem;
+    margin-left: 1rem;
+    color: var(--blue);
+}
 @media screen and (max-width:1350px) {
     .aboutus {
         display: flex;
@@ -297,6 +398,9 @@ nav ul li a:hover{
         margin-left: 3rem;
         width: 551px;
     }
+    .services-box {
+        width: 350px;
+    }
 }
 @media screen and (max-width:1200px) {
     .aboutus h1 {
@@ -305,6 +409,9 @@ nav ul li a:hover{
     .aboutus-img {
         width: 360px;
         height: 590px;
+    }
+    .services-box {
+        width: 285px;
     }
 }
 @media screen and (max-width:1000px) {
@@ -325,6 +432,9 @@ nav ul li a:hover{
     .aboutus {
         margin-left: 0;
         width: 90%;
+    }
+    .services-box{
+        width: 300px;
     }
 }
 @media screen and (max-width:900px) {
@@ -359,6 +469,12 @@ nav ul li a:hover{
     .aboutus-img {
         width: 90%;
         height: auto;
+    }
+    .services-box{
+        width: 90%;
+    }
+    .services-header {
+        width: 90%;
     }
 }
 @media screen and (max-width:600px) {
