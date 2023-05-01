@@ -296,7 +296,7 @@ nav ul li a:hover{
     flex-direction: column;
     padding: 7rem 0;
 }
-.services-header{
+.headers{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -305,7 +305,7 @@ nav ul li a:hover{
     padding:  0 3rem;
     width: 600px;
 }
-.services-header h1{
+.headers h1{
     margin: 2rem 0;
     margin-bottom: 4rem;
 }
@@ -388,6 +388,102 @@ nav ul li a:hover{
     font-size: 1.7rem;
     margin-left: 1rem;
     color: var(--blue);
+}
+/* Price */
+#price{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 6rem 0;
+}
+.price{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.price-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 350px;
+    margin: 4rem 2rem;
+}
+.price-box-head{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3rem 0;
+}
+.price-box-head-blue{
+    background-color: var(--blue);
+}
+.price-box-head-red{
+    background-color: var(--red);
+}
+.price-box-head h2{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+}
+.price-box-head h1 {
+    font-size: 5rem;
+    color: #fff;
+}
+.price-box-head h1 sup{
+    font-size: 2rem;
+}
+.price-box-head h1 sub{
+    font-size: 2rem;
+}
+.price-box-desc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem 0;
+}
+.price-box .btn-blue{
+    padding: .8rem 2rem;
+    transform: translateY(20px);
+}
+.price-box .btn-red{
+    padding: .8rem 2rem;
+    transform: translateY(20px);
+}
+.price-box-blue{
+    border-right: 1px solid var(--blue);
+    border-left: 1px solid var(--blue);
+    border-bottom: 1px solid var(--blue);
+}
+.price-box-red{
+    border-right: 1px solid var(--red);
+    border-left: 1px solid var(--red);
+    border-bottom: 1px solid var(--red);
+}
+.price-box-desc ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    list-style: none;
+    width: 100%;
+}
+.price-box-desc ul li {
+    font-size: 1.6rem;
+    margin: 1rem 0;
+}
+.price-box-desc ul hr{
+    width: 100%;
+    height: 1px;
+    outline: none;
+    border: none;
+    background-color: #eaeaea;
 }
 @media screen and (max-width:1350px) {
     .aboutus {
@@ -476,6 +572,9 @@ nav ul li a:hover{
     .services-header {
         width: 90%;
     }
+    .headers {
+        width: 90%;
+    }
 }
 @media screen and (max-width:600px) {
     .hero {
@@ -507,5 +606,8 @@ nav ul li a:hover{
     }
     nav ul {
         flex-direction: column;
+    }
+    .price-box {
+        width: 90%;
     }
 }
