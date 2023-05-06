@@ -520,6 +520,83 @@ nav ul li a:hover{
     letter-spacing: 2px;
     font-weight: 500;
 }
+/* Team */
+#team{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 6rem 0;
+}
+.team{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.team-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 350px;
+    margin: 2rem 2.5rem;
+}
+.team-box-img{
+    position: relative;
+    width: 100%;
+}
+.team-box-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.team-box-desc{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--blue);
+    padding: 2rem .5rem;
+    color: #fff;
+}
+.team-box-desc h2{
+    font-size: 2.5rem;
+}
+.team-box-desc h4{
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+.team-box-ico{
+    padding: 1rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    right: -30px;
+    bottom: 0;
+    background-color: #fff;
+}
+.team-box-ico i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--red);
+    transition: all .3s ease;
+    font-size: 2rem;
+    width: 35px;
+    height: 35px;
+    border: 1px solid var(--red);
+    border-radius: 3px;
+    margin: .5rem 0;
+    cursor: pointer;
+}
+.team-box-ico i:hover{
+    background-color: var(--red);
+    color: #fff;
+}
 @media screen and (max-width:1350px) {
     .aboutus {
         display: flex;
@@ -532,6 +609,9 @@ nav ul li a:hover{
     .services-box {
         width: 350px;
     }
+    .team-box {
+        width: 280px;
+    }
 }
 @media screen and (max-width:1200px) {
     .aboutus h1 {
@@ -543,6 +623,9 @@ nav ul li a:hover{
     }
     .services-box {
         width: 285px;
+    }
+    .team-box {
+        width: 260px;
     }
 }
 @media screen and (max-width:1000px) {
@@ -640,6 +723,12 @@ nav ul li a:hover{
     .offer {
         width: 100%;
     }  
+    .team-box {
+        width: 80%;
+    }
+    .team-box-ico{
+        right: -20px;
+    }
 }
 @media screen and (max-width:500px) {
     h1 {
