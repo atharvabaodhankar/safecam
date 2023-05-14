@@ -597,6 +597,75 @@ nav ul li a:hover{
     background-color: var(--red);
     color: #fff;
 }
+/* Testimonial */
+#testi{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 6rem 0;
+}
+.testi{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.testi-header{
+    margin-bottom: 4rem;
+}
+.testi-box{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    flex-direction: column;
+    height: 230px;
+    padding: 2rem 2rem;
+    width: 400px;
+    text-align: center;
+    margin: 4rem 2rem;
+    background-color: #ECF4FF;
+}
+.testi-box-active{
+    transition: all .3s ease;
+}
+.testi-box:hover {
+    height: 330px;
+
+}
+.testi-box-active:hover{
+    background-color: var(--blue);
+    color: #fff;
+}
+.testi-box img{
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50% , -50%);
+    top: -0px;
+    transition: all .5s ease;
+    border: 4px solid transparent;
+}
+.testi-box:hover img{
+    top: 30%;
+    border: 4px solid #fff;
+    transform:translate(-50% , -50%) rotate(0deg) scale(1.3);
+}
+.testi-box p{
+    font-size: 1.7rem;
+}
+.testi-box h2{
+    font-size: 2.2rem;
+}
+.testi-box h5{
+    font-size: 1.6rem;
+    font-weight: 300;
+}
 @media screen and (max-width:1350px) {
     .aboutus {
         display: flex;
@@ -611,6 +680,9 @@ nav ul li a:hover{
     }
     .team-box {
         width: 280px;
+    }
+    .testi-box {
+        width: 354px;
     }
 }
 @media screen and (max-width:1200px) {
@@ -696,6 +768,12 @@ nav ul li a:hover{
     .headers {
         width: 90%;
     }
+    .testi-box {
+        width: 70%;
+    }
+    .testi-box:hover {
+        height: 360px;
+    }
 }
 @media screen and (max-width:600px) {
     .hero {
@@ -746,4 +824,12 @@ nav ul li a:hover{
     .offer {
         padding: 0 1rem;
     }  
+    .testi-box {
+        width: 90%;
+    }
+}
+@media screen and (max-width:350px) {
+    .testi-box:hover {
+        height: 390px;
+    }
 }
