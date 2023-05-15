@@ -666,6 +666,90 @@ nav ul li a:hover{
     font-size: 1.6rem;
     font-weight: 300;
 }
+/* Blog */
+#blog{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 6rem 0;
+}
+.blog{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.blog-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 600px;
+    margin: 2rem 2rem;
+}
+.blog-box-img{
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+.blog-skicker{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+    background-color: var(--red);
+    height: 60px;
+    width: 80px;
+    top: 50px;
+    left: -20px;
+}
+.blog-skicker::after {
+    content: '';
+    width: 38px;
+    background-color:#bb3c49;
+    position: absolute;
+    height: 20px;
+    top: -17px;
+    left: 3%;
+    z-index: -1;
+    transform: rotate(-45deg);
+}
+.blog-skicker h2{
+    font-size: 1.8rem;
+}
+.blog-skicker h3{
+    font-size: 1.4rem;
+    letter-spacing: .5px ;
+}
+.blog-box-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.blog-box-desc{
+    flex-direction: column;
+    background-color: var(--blue);
+    height: 200px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: center;
+    padding: 2rem 2rem;
+    color: #fff;
+    text-align: left;
+}
+.blog-box-desc h3{
+    font-size: 2rem;
+    font-weight: 300;
+}
+.blog-box-desc h2{
+    margin-top: 1.5rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
 @media screen and (max-width:1350px) {
     .aboutus {
         display: flex;
@@ -684,6 +768,9 @@ nav ul li a:hover{
     .testi-box {
         width: 354px;
     }
+    .blog-box {
+        width: 480px;
+    }
 }
 @media screen and (max-width:1200px) {
     .aboutus h1 {
@@ -698,6 +785,9 @@ nav ul li a:hover{
     }
     .team-box {
         width: 260px;
+    }
+    .blog-box {
+        width: 400px;
     }
 }
 @media screen and (max-width:1000px) {
@@ -746,6 +836,12 @@ nav ul li a:hover{
     }
     .offer {
         width: 90%;
+    }
+    .blog{
+        flex-direction: column;
+    }
+    .blog-box {
+        width: 80%;
     }
 }
 @media screen and (max-width:800px) {
@@ -807,6 +903,9 @@ nav ul li a:hover{
     .team-box-ico{
         right: -20px;
     }
+    .blog-box-img {
+        height: 260px;
+    }
 }
 @media screen and (max-width:500px) {
     h1 {
@@ -826,6 +925,15 @@ nav ul li a:hover{
     }  
     .testi-box {
         width: 90%;
+    }
+    .blog-box {
+        width: 85%;
+    }
+    .blog-box-desc h3 {
+        font-size: 1.6rem;
+    }
+    .blog-box-desc h2 {
+        font-size: 2.2rem;
     }
 }
 @media screen and (max-width:350px) {
