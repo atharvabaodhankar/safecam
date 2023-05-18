@@ -750,6 +750,93 @@ nav ul li a:hover{
     font-size: 2.5rem;
     font-weight: 600;
 }
+/* Footer */
+#footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7rem 0;
+    background-color:#120F2D ;
+    color: #fff;
+    flex-direction: column;
+}
+.footer{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.footer-box{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.footer-box h2{
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+.footer-box ul{
+    list-style: none;
+}
+.footer-box ul li{
+    margin: 1rem 0;
+    font-size: 1.6rem;
+}
+.footer-box ul i{
+    margin-right: 1rem;
+    color: var(--blue);
+}
+.footer-box-ico{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-box-ico i{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--blue);
+    color: #fff;
+    border-radius: 2px;
+    font-size: 1.8rem;
+    cursor: pointer;
+    margin:  .4rem;
+    transition: all .3s ease;
+}
+.footer-box-ico i:hover{
+    background-color: var(--red);
+}
+.footer-mail{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55px;
+    margin-top: 5rem;
+}
+.footer-mail input{
+    width: 350px;
+    height: 100%;
+    outline: none;
+    padding: 0 1rem;
+}
+.footer-mail input::placeholder{
+    font-size: 1.8rem;
+}
+.footer-mail a{
+    background-color: var(--blue);
+    color: #fff;
+    font-size: 1.7rem;
+    height: 100%;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
 @media screen and (max-width:1350px) {
     .aboutus {
         display: flex;
@@ -770,6 +857,9 @@ nav ul li a:hover{
     }
     .blog-box {
         width: 480px;
+    }
+    .footer {
+        width: 90%;
     }
 }
 @media screen and (max-width:1200px) {
@@ -812,6 +902,12 @@ nav ul li a:hover{
     .services-box{
         width: 300px;
     }
+    .footer {
+        flex-wrap: wrap;
+    }
+    .footer-box{
+        margin: 2rem 2rem;
+    }
 }
 @media screen and (max-width:900px) {
     .hamburger{
@@ -845,7 +941,9 @@ nav ul li a:hover{
     }
 }
 @media screen and (max-width:800px) {
-
+    .footer-mail input {
+        width: 200px;
+    }
 }
 @media screen and (max-width:700px) {
     h1 {
